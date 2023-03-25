@@ -1,10 +1,12 @@
 import React from "react";
 //import { Link } from "react-router-dom";
 
-export default function BookList() {
+const BookList = () => {
   return (
     <>
       <h1>BookList</h1>
     </>
   );
-}
+};
+
+export default BookList;

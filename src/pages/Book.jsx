@@ -1,7 +1,16 @@
 import React from "react";
+import { useOutletContext } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
-export default function Book() {
+const Book = () => {
   const { id } = useParams();
-  return <div>Book {id}</div>;
-}
+  const obj = useOutletContext();
+  return (
+    <h1>
+      Book {id}
+      {obj.hello}
+    </h1>
+  );
+};
+
+export default Book;

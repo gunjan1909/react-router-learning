@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function NewBook() {
-  return <div>NewBook</div>;
+  return <h1>NewBook</h1>;
 }
